@@ -1,10 +1,13 @@
 {
-    "name": "ocean-enterprise-design-system",
+    "name": "@aliramazon/oe-react-design-system",
     "version": "1.0.0",
     "description": "React components library for Ocean Enterprise design system",
     "repository": "https://github.com/aliramazon/oe-react-design-system",
     "author": "Ali Ramazon",
     "license": "MIT",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/aliramazon"
+    },
     "scripts": {
         "build": "rollup -c"
     },
