@@ -1,2 +1,4 @@
-export { default } from './Button';
-export * from './ButtonProps';
+import * as ButtonProps from './ButtonProps';
+import Button from './Button';
+
+export { ButtonProps, Button };
