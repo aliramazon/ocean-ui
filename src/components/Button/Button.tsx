@@ -1,5 +1,9 @@
 import React, { FC } from 'react';
-import { ButtonProps } from './ButtonProps';
+
+export interface ButtonProps {
+    size?: 'large' | 'medium' | 'small';
+    label: string;
+}
 
 const Button: FC<ButtonProps> = ({ size, label }) => {
     return <button>{label}</button>;
