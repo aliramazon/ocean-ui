@@ -1,0 +1,15 @@
+{
+  "name": "ocean-enterprise-design-system",
+  "version": "1.0.0",
+  "description": "React components library for Ocean Enterprise design system",
+  "main": "index.ts",
+  "repository": "https://github.com/aliramazon/oe-react-design-system",
+  "author": "Ali Ramazon",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "react": "^17.0.2",
+    "typescript": "^4.5.5"
+  }
+}
