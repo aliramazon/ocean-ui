@@ -1,6 +1,6 @@
 {
     "name": "@aliramazon/oe-react-design-system",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "React components library for Ocean Enterprise design system",
     "repository": "https://github.com/aliramazon/oe-react-design-system",
     "author": "Ali Ramazon",
@@ -22,8 +22,8 @@
         "tslib": "^2.3.1",
         "typescript": "^4.5.5"
     },
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
     "files": [
         "dist"
     ],
