@@ -4,6 +4,7 @@ import typescript from '@rollup/plugin-typescript';
 import dts from 'rollup-plugin-dts';
 
 const packageJson = require('./package.json');
+const isDevEnv = process.env.NODE_ENV === 'development';
 
 export default [
     {
@@ -12,12 +13,12 @@ export default [
             {
                 file: packageJson.main,
                 format: 'cjs',
-                sourcemap: true
+                sourcemap: isDevEnv ? true : false
             },
             {
                 file: packageJson.module,
                 format: 'esm',
-                sourcemap: true
+                sourcemap: isDevEnv ? true : false
             }
         ],
         plugins: [

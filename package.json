@@ -1,6 +1,6 @@
 {
     "name": "@aliramazon/oe-react-design-system",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "React components library for Ocean Enterprise design system",
     "repository": "https://github.com/aliramazon/oe-react-design-system",
     "author": "Ali Ramazon",
@@ -9,7 +9,8 @@
         "registry": "https://npm.pkg.github.com/aliramazon"
     },
     "scripts": {
-        "build": "rollup -c"
+        "build": "rollup -c",
+        "dev": "rollup -c --environment NODE_ENV:development"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^21.0.2",
