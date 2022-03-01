@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { InputProps } from './InputProps';
+import styles from './Input.module.scss';
 
 const Input: FC<InputProps> = ({ onChange, value }) => {
     return (
@@ -7,6 +8,7 @@ const Input: FC<InputProps> = ({ onChange, value }) => {
             type="text"
             value={value}
             onChange={(e) => onChange(e.target.value)}
+            className={styles.test}
         />
     );
 };
