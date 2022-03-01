@@ -1,9 +1,18 @@
 import React, { FC } from 'react';
-import { ButtonProps } from './ButtonProps';
-import styles from './Button.module.scss';
+import styled, { css } from 'styled-components';
+import { ButtonProps, ButtonSize } from './ButtonProps';
+
+const ButtonBase = styled.button<{ size?: ButtonSize }>`
+    font-size: 20px;
+    ${({ size }) =>
+        size === 'large' &&
+        css`
+            font-size: 30px;
+        `}
+`;
 
 const Button: FC<ButtonProps> = ({ size, label }) => {
-    return <button className={styles.button}>{label}</button>;
+    return <ButtonBase size={size}>{label}</ButtonBase>;
 };
 
 export default Button;

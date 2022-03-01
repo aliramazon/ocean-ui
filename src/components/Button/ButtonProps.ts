@@ -1,4 +1,5 @@
+export type ButtonSize = 'large' | 'medium' | 'small';
 export interface ButtonProps {
-    size?: 'large' | 'medium' | 'small';
+    size?: ButtonSize;
     label: string;
 }

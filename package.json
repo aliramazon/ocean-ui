@@ -1,6 +1,6 @@
 {
     "name": "@aliramazon/oe-react-design-system",
-    "version": "1.0.25",
+    "version": "1.0.27",
     "description": "React components library for Ocean Enterprise design system",
     "repository": "https://github.com/aliramazon/oe-react-design-system",
     "author": "Ali Ramazon",
@@ -17,11 +17,10 @@
         "@rollup/plugin-node-resolve": "^13.1.3",
         "@rollup/plugin-typescript": "^8.3.1",
         "@types/react": "^17.0.39",
-        "autoprefixer": "^10.4.2",
         "node-sass": "^7.0.1",
-        "postcss": "^8.4.7",
         "rollup": "^2.68.0",
         "rollup-plugin-dts": "^4.1.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
         "rollup-plugin-postcss": "^4.0.2",
         "rollup-plugin-terser": "^7.0.2",
         "tslib": "^2.3.1",
@@ -33,7 +32,10 @@
         "dist"
     ],
     "types": "dist/index.d.ts",
-    "dependencies": {},
+    "dependencies": {
+        "@types/styled-components": "^5.1.23",
+        "styled-components": "^5.3.3"
+    },
     "peerDependencies": {
         "react": "^17.0.2"
     }
