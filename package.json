@@ -1,8 +1,8 @@
 {
-    "name": "@aliramazon/oe-react-design-system",
+    "name": "@aliramazon/ocean-ui",
     "version": "1.0.27",
     "description": "React components library for Ocean Enterprise design system",
-    "repository": "https://github.com/aliramazon/oe-react-design-system",
+    "repository": "https://github.com/aliramazon/ocean-ui",
     "author": "Ali Ramazon",
     "license": "MIT",
     "publishConfig": {
