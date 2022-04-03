@@ -22,11 +22,9 @@ const ButtonBase = styled.button<{ size?: ButtonSize }>`
         size === 'large' &&
         css`
             font-size: 30px;
-        `}
+        `};
 `;
 
-const Button: FC<ButtonProps> = ({ size, label }) => {
+export const Button: FC<ButtonProps> = ({ size, label }) => {
     return <ButtonBase size={size}>{label}</ButtonBase>;
 };
-
-export default Button;
